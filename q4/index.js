@@ -26,17 +26,14 @@ check.addEventListener('click', function(e){
 console.log(y.length);
 console.log(y);
 */
-var y = document.getElementById('username').value;
 
 var check = document.getElementById('check');
 check.addEventListener('click', function(e){
 	e.preventDefault();
-	if (document.getElementById('password').value == '12345678' && y.length < 14){
+	var username = document.getElementById('username').value;
+	if (document.getElementById('password').value == '12345678' && username.length < 14){
 		document.getElementById('header').innerText = 'Congrats on knowing your username and password!';
 	} else {
 		alert('Incorrect username or password.');
 	}
 });
-
-console.log(y.length);
-console.log(y);
