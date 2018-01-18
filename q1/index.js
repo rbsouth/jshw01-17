@@ -7,7 +7,6 @@ var pickMe = document.getElementById('me');
 pickMe.addEventListener('click', function(){
 	document.getElementById('input-box').value = "I'm Right!"
 });
-
 var noMe = document.getElementById('noMe');
 noMe.addEventListener('click', function(){
 	document.getElementById('input-box').value = "No, I'm Right!"
